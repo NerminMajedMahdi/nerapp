@@ -1,3 +1,13 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-end
+end 
+
+
+def home
+  end
+
+  def contact
+  end
+
+  def about
+  end

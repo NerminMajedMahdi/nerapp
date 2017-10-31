@@ -1,18 +1,57 @@
-<!DOCTYPE html>
+
+
+ <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nerminrubyrails1</title>
+  <header>
+  <h1>Hello in My New Application on Ruby & rails </h1>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= csrf_meta_tags %>
-<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  </head>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+ 
 
 
+ <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="Home"></span>
+        <span class="About"></span>
+        <span class="Contact"></span>
+      </button>
+        <li><a href="#">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact">Contact</a></li>
+    </div>
 
-
-
-  <body>
-    <%= yield %>
-  </body>
+  </header>
+</article>
 </html>
+
+
+<body>
+  <%= yield %>
+<%= image_tag("flower.jpg", class: "img-responsive my-image") %>
+<% test_variable = 42 %>
+
+</body>
+
+
+
+ <footer>
+    &copy; 2017 Nermin M. Mahdi
+  </footer>
+  </body>
+ 
+
+
