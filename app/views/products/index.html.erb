@@ -1,0 +1,59 @@
+
+
+
+<h1>Products</h1>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="product"></div>
+        <div class="header"><h4>Flower1</h4></div>
+        <div class="data"> <%= image_tag("flowerse.jpg", class: "img-responsive p-image") %></div>
+        <p><h2>50$ </h2></p>
+        </div>
+
+     
+     <div class="col-md-4">
+      <div class="product"></div>
+        <div class="header"><h4>Flower2</h4></div>
+        <div class="data"> <%= image_tag("flower.jpg", class: "img-responsive p-image") %></div>
+        <p><h2>39$ </h2></p>
+        </div>
+
+
+     <div class="col-md-4">
+      <div class="product"></div>
+        <div class="header"><h4>Flower3</h4></div>
+          <div class="data"> <%= image_tag("1ff.jpg", class: "img-responsive p-image") %></div>
+        <div><h2>49$ </h2></div>
+          </div>
+  </div>
+</div>
+
+  <tbody>
+
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+    <div class="columns">
+      <ul class="product">
+        <li><%= product.name %></li>
+        <li><%= product.description %></li>
+        <li><%= image_tag(product.image_url, class: "img-responsive") %></li>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>  
+      </ul>
+</div>
+  <% end %>
+  </div>
+</div>
+
+  </tbody>
+</table>
+
+<%= link_to 'New Product', new_product_path %>
+
+

@@ -12,8 +12,10 @@ group :production do
   gem 'pg'
 end
 
+
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -51,6 +53,8 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
 end
+
+
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
